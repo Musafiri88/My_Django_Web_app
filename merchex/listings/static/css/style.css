@@ -1,0 +1,83 @@
+/* All style for pages */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for body */
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* style for header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu_icon {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu_list {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.546);
+  color: white;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  width: 150px;
+}
+
+.menu_list li {
+  padding: 8px;
+}
+
+.menu_list li a {
+  text-decoration: none;
+    color: white;
+}
+
+.menu_list li:hover {
+  background: #555;
+}
+
+/* 👇 activation au survol */
+.menu:hover .menu_list {
+  display: block;
+}

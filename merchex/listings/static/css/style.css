@@ -87,3 +87,49 @@ main {
     padding: 2rem;
     margin: 4rem auto;
 }
+
+
+/* style for listings table container */
+table{
+    width: 100%;
+    min-height: 100%;
+    border-collapse: collapse;
+    border: #333 solid 1px;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+.tr_body{
+    background-color: black;
+}
+
+.tr_body:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.135);
+}
+
+th,
+td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style for delete and edit Btn from listings.html */
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:nth-child(2) {
+    background-color: #dc3545;
+    margin-top: 2px;
+}

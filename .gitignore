@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+
+# Base de données locale
+db.sqlite3
+
+# Environnement virtuel
+venv/
+env/
+
+# Variables sensibles
+.env
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.swp
+
+# Dossiers de build
+/build
+/dist

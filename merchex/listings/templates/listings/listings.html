@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+
+{% block title %}Listings - Merchex{% endblock title %}
+
+{% block content %}
+    <h1>Listings</h1>
+    <p>Welcome to the listings page. Here you can find all the available products.</p><br>
+    <h4>The music band list prefer : </h4>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Genre</th>
+            <th>Biography</th>
+            <th>Year Formed</th>
+            <th>Active</th>
+            <th>Official URL</th>
+            <th>Action</th>
+        </tr>
+        {% for band in bands %}
+        <tr class="tr_body">
+            <td>{{ band.name }}</td>
+            <td>{{ band.genre }}</td>
+            <td>{{ band.biography }}</td>
+            <td>{{ band.year_formed }}</td>
+            <td>{{ band.active }}</td>
+            <td><a href="{{ band.official_homepage }}" target="_blank">{{ band.official_homepage }}</a></td>
+            <td>
+                <button type="submit" class="edit_btn">Edit</button>
+                <button type="submit" class="delete_btn">Delete</button>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock content %}

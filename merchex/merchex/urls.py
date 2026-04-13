@@ -21,4 +21,5 @@ from listings import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.homepage, name='home'),
+    path('listings/', views.listings, name='listings'),
 ]

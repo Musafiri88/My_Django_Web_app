@@ -81,3 +81,9 @@ nav ul li a {
 .menu:hover .menu_list {
   display: block;
 }
+
+/* Style for main content */
+main {
+    padding: 2rem;
+    margin: 4rem auto;
+}
